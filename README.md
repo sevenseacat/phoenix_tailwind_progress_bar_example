@@ -1,18 +1,23 @@
-# PhoenixTailwindProgressBarExample
+# Phoenix LiveView and component flash message example
 
-To start your Phoenix server:
+An example of how to use the HTML `progress` element and TailwindCSS, to make nicely styled progress components that don't violate content security policies!
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+I wrote more about this in a blog post, [Dynamic HTML progress bars with TailwindCSS](https://sevenseacat.net/posts/2024/dynamic-html-progress-bars-with-tailwindcss/).
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+## Setup
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+```
+git clone https://github.com/sevenseacat/phoenix_tailwind_progress_bar_example.git
+cd phoenix_tailwind_progress_bar_example
+mix deps.get
+```
 
-## Learn more
+## Run
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+```
+mix phx.server
+```
+
+And you can visit the default homepage at http://localhost:4000.
+
+Check out the TailwindCSS config in `assets/tailwind.config.js`, and the the LiveView in `/lib/phoenix_tailwind_progress_bar_example/live/demo_live.ex` to see how it all hangs together! ✨
