@@ -17,7 +17,7 @@ defmodule PhoenixTailwindProgressBarExampleWeb.Router do
   scope "/", PhoenixTailwindProgressBarExampleWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", DemoLive
   end
 
   # Other scopes may use custom stacks.
