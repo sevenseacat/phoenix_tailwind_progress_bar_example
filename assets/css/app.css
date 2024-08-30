@@ -3,3 +3,77 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+
+@keyframes size {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes orange {
+  from {
+    @apply bg-red-500
+  }
+
+  to {
+    @apply bg-orange-500
+  }
+}
+
+@keyframes yellow {
+  from {
+    @apply bg-red-500
+  }
+
+  50% {
+    @apply bg-orange-500
+  }
+
+  to {
+    @apply bg-yellow-500
+  }
+}
+
+@keyframes lime {
+  from {
+    @apply bg-red-500
+  }
+
+  30% {
+    @apply bg-orange-500
+  }
+
+  70% {
+    @apply bg-yellow-500
+  }
+
+  to {
+    @apply bg-lime-500
+  }
+}
+
+@keyframes green {
+  from {
+    @apply bg-red-500
+  }
+
+  25% {
+    @apply bg-orange-500
+  }
+
+  50% {
+    @apply bg-yellow-500
+  }
+
+  75% {
+    @apply bg-lime-500
+  }
+
+  to {
+    @apply bg-green-500
+  }
+}
